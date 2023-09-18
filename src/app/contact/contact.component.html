@@ -1,0 +1,71 @@
+<section id="contact">
+  <form #form action="https://formspree.io/f/xyyqzzjg" method="post" [formGroup]="contactForm">
+    <div class="container mb-5">
+      <h2><strong>{{local.data.contact.contactMe }}</strong></h2>
+      <span class="bar-title mb-5"></span>
+      <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="col-md-3 col-lg-3">
+          <div class="contact-info">
+            <img src="assets/images/contact-image.png" alt="image" />
+            <h4>{{local.data.contact.notHesitateToContactMe }}</h4>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="contact-form">
+            <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched"
+              class="alert alert-danger">
+              <div *ngIf="contactForm.controls['name'].errors?.['required']">
+                Name is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="identite">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="name" id="identite" placeholder="Enter Name"
+                  name="fname">
+              </div>
+            </div>
+            <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
+              class="alert alert-danger">
+              <div *ngIf="contactForm.controls['email'].invalid">
+                A valid email is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">{{local.data.contact.email }}</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" formControlName="email" id="email"
+                  placeholder="{{local.data.contact.enterEmail }}" name="email">
+              </div>
+            </div>
+            <div *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched"
+              class="alert alert-danger">
+              <div *ngIf="contactForm.controls['subject'].errors?.['required']">
+                Subject is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="object">Subject</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="subject" id="object"
+                  placeholder="{{local.data.contact.enterObject }}" name="object">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comment">{{local.data.contact.message }}</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" formControlName="message" id="comment"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button [disabled]="contactForm.status=='INVALID'" type="submit" (click)="form.submit()"
+                  class="btn btn-default">{{local.data.contact.send }}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
