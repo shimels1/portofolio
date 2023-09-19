@@ -8,6 +8,7 @@
                     <img src="assets/images/profile.jpg" alt="photo de profil" class="img-fluid">
                 </picture>
                 <div class="d-flex justify-content-center">
+
                     <a class="btn-social-media" href="https://www.linkedin.com/in/shimels-alem-359149100/" rel="tooltip"
                         target="_blank" title="{{local.data.about.followMeOn }} Linkedin">
                         <i class="fa fa-linkedin fa-lg "></i>
@@ -15,6 +16,9 @@
                     <a class="btn-social-media btn-default btn-round btn-lg btn-icon" href="https://github.com/shimels1"
                         rel="tooltip" target="_blank" title="{{local.data.about.followMeOn }} GitHub">
                         <i class="fa fa-github fa-lg "></i></a>
+                    <a class="btn-social-media btn-default btn-round btn-lg btn-icon" rel="tooltip" target="_blank"
+                        title="Get my resume" (click)="dowloadPDF()">
+                        <i class="fa fa-file fa-lg "></i></a>
                 </div>
             </div>
             <div class="col-lg-8  col-md-12 pt-4 pt-lg-0" data-aos="fade-left">
@@ -37,17 +41,22 @@
                                 <fa-icon [icon]="email"></fa-icon><strong><a href="mailto:shimelsalem@gmail.com">
                                         shimelsalem@gmail.com</a></strong>
                             </li>
+
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <ul>
+
                             <li>
                                 <fa-icon [icon]="birthday"></fa-icon><strong> 29 {{local.data.about.years }}</strong>
                             </li>
                             <li>
                                 <fa-icon [icon]="badge"></fa-icon><strong> {{local.data.about.graduation }}</strong>
                             </li>
-
+                            <li>
+                                <fa-icon [icon]="phone"></fa-icon><strong>
+                                    +251918375305</strong>
+                            </li>
                         </ul>
                     </div>
                 </div>

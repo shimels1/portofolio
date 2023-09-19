@@ -429,6 +429,9 @@ Awesome, nor vice versa. **Please do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.**
 
 
+font-awesome
+(OFL-1.1 AND MIT)
+
 jquery
 MIT
 Copyright OpenJS Foundation and other contributors, https://openjsf.org/

@@ -16,6 +16,8 @@ export class AboutComponent implements OnInit {
   badge: any;
   home: any;
   local: any;
+  phone: any;
+  resume: any;
 
   constructor() {}
 
@@ -27,6 +29,15 @@ export class AboutComponent implements OnInit {
     this.birthday = awesom.faBirthdayCake;
     this.badge = awesom.faGraduationCap;
     this.home = awesom.faLaptopHouse;
+    this.phone = awesom.faPhone;
+    this.resume = awesom.faFile;
     this.local = locale;
+  }
+
+  dowloadPDF() {
+    let link = document.createElement('a');
+    link.download = 'ShimelsResume.pdf';
+    link.href = 'assets/file/ShimelsResume.pdf';
+    link.click();
   }
 }
