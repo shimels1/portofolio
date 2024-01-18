@@ -6,27 +6,27 @@ export const projectsEn = [
     images: [
       {
         title: '1',
-        src: 'assets/images/pav/1.png',
+        src: 'portofolio/assets/images/pav/1.png',
       },
       {
         title: '2',
-        src: 'assets/images/pav/2.png',
+        src: 'portofolio/assets/images/pav/2.png',
       },
       {
         title: '3',
-        src: 'assets/images/pav/3.png',
+        src: 'portofolio/assets/images/pav/3.png',
       },
       {
         title: '4',
-        src: 'assets/images/pav/4.png',
+        src: 'portofolio/assets/images/pav/4.png',
       },
       {
         title: '5',
-        src: 'assets/images/pav/5.png',
+        src: 'portofolio/assets/images/pav/5.png',
       },
       {
         title: '6',
-        src: 'assets/images/pav/6.png',
+        src: 'portofolio/assets/images/pav/6.png',
       },
     ],
     url: 'https://github.com/shimels1/Pavement-Management-System-PMS-',
@@ -41,23 +41,23 @@ export const projectsEn = [
     images: [
       {
         title: '1',
-        src: 'assets/images/ent/1.png',
+        src: 'portofolio/assets/images/ent/1.png',
       },
       {
         title: '2',
-        src: 'assets/images/ent/2.png',
+        src: 'portofolio/assets/images/ent/2.png',
       },
       {
         title: '3',
-        src: 'assets/images/ent/3.png',
+        src: 'portofolio/assets/images/ent/3.png',
       },
       {
         title: '4',
-        src: 'assets/images/ent/4.png',
+        src: 'portofolio/assets/images/ent/4.png',
       },
       {
         title: '5',
-        src: 'assets/images/ent/5.png',
+        src: 'portofolio/assets/images/ent/5.png',
       },
     ],
     url: 'https://github.com/shimels1/Entertainment-website',
@@ -73,23 +73,23 @@ export const projectsEn = [
     images: [
       {
         title: '1',
-        src: 'assets/images/food/1.png',
+        src: 'portofolio/assets/images/food/1.png',
       },
       {
         title: '2',
-        src: 'assets/images/food/2.png',
+        src: 'portofolio/assets/images/food/2.png',
       },
       {
         title: '3',
-        src: 'assets/images/food/3.png',
+        src: 'portofolio/assets/images/food/3.png',
       },
       {
         title: '4',
-        src: 'assets/images/food/4.png',
+        src: 'portofolio/assets/images/food/4.png',
       },
       {
         title: '5',
-        src: 'assets/images/food/5.png',
+        src: 'portofolio/assets/images/food/5.png',
       },
     ],
     url: 'https://github.com/shimels1/online-food-ordering-system',
